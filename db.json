@@ -1,0 +1,40 @@
+{
+    "animalData" :[
+        {
+            "name" : "Red Panda",
+            "imageUrl" : "https://i.pinimg.com/736x/17/3a/4f/173a4f19def5eb4c0115f671d078ee1b.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi earum perferendis quis quos natus rem iusto ullam veritatis commodi, voluptatibus quae. Sit, perspiciatis? Praesentium sint numquam ducimus quisquam illum architecto.",
+            "donations": 0
+        },
+        {
+            "name" : "Pangolin",
+            "imageUrl" : "https://i.pinimg.com/736x/ef/04/f9/ef04f94ad0024b5240c996c2b5901572.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi earum perferendis quis quos natus rem iusto ullam veritatis commodi, voluptatibus quae. Sit, perspiciatis? Praesentium sint numquam ducimus quisquam illum architecto.",
+            "donations": 0
+        },
+        {
+            "name" : "Mantis Shrimp",
+            "imageUrl" : "https://i.pinimg.com/736x/b2/ae/f3/b2aef319b533f4b8eefd5e3677ce71c0.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi earum perferendis quis quos natus rem iusto ullam veritatis commodi, voluptatibus quae. Sit, perspiciatis? Praesentium sint numquam ducimus quisquam illum architecto.",
+            "donations": 0
+        },
+        {
+            "name" : "Gibbon",
+            "imageUrl" : "https://i.pinimg.com/736x/a1/25/62/a12562aeea0e08b56f026c51b559e1e4.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi earum perferendis quis quos natus rem iusto ullam veritatis commodi, voluptatibus quae. Sit, perspiciatis? Praesentium sint numquam ducimus quisquam illum architecto.",
+            "donations": 0
+        },
+        {
+            "name" : "Wombat",
+            "imageUrl" : "https://i.pinimg.com/736x/90/03/ab/9003abc634416d09319b26d1dc40bac6.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi earum perferendis quis quos natus rem iusto ullam veritatis commodi, voluptatibus quae. Sit, perspiciatis? Praesentium sint numquam ducimus quisquam illum architecto.",
+            "donations": 0
+        },
+        {
+            "name" : "Wombat",
+            "imageUrl" : "https://i.pinimg.com/736x/90/03/ab/9003abc634416d09319b26d1dc40bac6.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi earum perferendis quis quos natus rem iusto ullam veritatis commodi, voluptatibus quae. Sit, perspiciatis? Praesentium sint numquam ducimus quisquam illum architecto.",
+            "donations": 0
+        }
+    ]
+}
