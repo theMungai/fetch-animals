@@ -9,10 +9,22 @@
 <body>
 
     <form action="">
-        <input type="text" placeholder="Name of the animal">
-        <input type="text" placeholder="Image URL">
-        <textarea name="" id="" placeholder="Description"></textarea>
-        <button>Submit</button>
+        <div class="input-containers">
+            <input type="text" placeholder="Name of the animal" class="animal-name">
+            <div class="error-message">This field is required</div>
+        </div>
+        
+        <div class="input-containers">
+            <input type="text" placeholder="Image URL" class="imageUrl">
+            <div class="error-message">This field is required</div>
+        </div>
+        
+        <div class="input-containers">
+            <textarea name="" id="" placeholder="Description" class="animal-description"></textarea>
+            <div class="error-message">This field is required</div>
+        </div>
+        
+        <button class="submit-button">Submit</button>
     </form>
     <ul class="container">
         

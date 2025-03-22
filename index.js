@@ -49,3 +49,8 @@ function renderData(animals){
 }
 
 fetchData()
+
+
+document.querySelector("form").addEventListener("submit", (event) => {
+    event.preventDefault()
+})
