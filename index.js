@@ -26,10 +26,21 @@ function renderData(animals){
         const listItem = document.createElement("li");
         listItem.classList.add("list-item")
         listItem.innerHTML = `
-            <img src = "${animal.imageUrl}">
-            ${animal.name} 
-            ${animal.description} 
-            ${animal.donations}
+            <div class = "contain-image">
+                <img src = "${animal.imageUrl}">
+            </div>
+
+            <div class = "animal-details">
+                <h2> ${animal.name} </h2>
+                <p>${animal.description} </p>
+                <h3>Donations:  ${animal.donations} </h3>
+
+                <div class = "buttons">
+                        <button>Donate</button>
+                        <button>Free</button>
+                </div>
+            </div>
+           
         
         `        
         container.appendChild(listItem)        
