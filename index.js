@@ -54,3 +54,33 @@ fetchData()
 document.querySelector("form").addEventListener("submit", (event) => {
     event.preventDefault()
 })
+
+function postAnimals(){
+    const inputContainers = document.querySelectorAll(".input-containers");
+
+    inputContainers.forEach((container) => {
+        let animalName = container.querySelector(".animal-name");
+        let imageUrl = container.querySelector(".imageUrl");
+        let animalDescription = container.querySelector(".animal-description");
+        let errorMessage = container.querySelector(".error-message");
+
+        if (animalName && animalName.value === "") {
+            errorMessage.style.display = "block"; 
+        } 
+        else if (imageUrl && imageUrl.value === "") {
+            errorMessage.style.display = "block";
+        } 
+        else if (animalDescription && animalDescription.value === "") {
+            errorMessage.style.display = "block"; 
+        }
+        else {
+            errorMessage.style.display = "none"; 
+        }    
+    })
+}
+
+
+const submitBtn = document.querySelector(".submit-button");
+submitBtn.addEventListener("click", () => {
+    postAnimals()
+})
