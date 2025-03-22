@@ -55,28 +55,42 @@ document.querySelector("form").addEventListener("submit", (event) => {
     event.preventDefault()
 })
 
-function postAnimals(){
-    const inputContainers = document.querySelectorAll(".input-containers");
+async function postAnimals(){
+    
+    let animalName = document.querySelector(".animal-name").value;
+    let imageUrl = document.querySelector(".imageUrl").value;
+    let animalDescription = document.querySelector(".animal-description").value;
+    let donateAmount = document.querySelector(".donations").value;
+    let errorMessage = document.querySelector(".error-message");
 
-    inputContainers.forEach((container) => {
-        let animalName = container.querySelector(".animal-name");
-        let imageUrl = container.querySelector(".imageUrl");
-        let animalDescription = container.querySelector(".animal-description");
-        let errorMessage = container.querySelector(".error-message");
-
-        if (animalName && animalName.value === "") {
+    donateAmount = parseFloat(donateAmount)
+        
+        if (animalName === "" || imageUrl === "" || animalDescription === "" || donateAmount === "") {
             errorMessage.style.display = "block"; 
         } 
-        else if (imageUrl && imageUrl.value === "") {
-            errorMessage.style.display = "block";
-        } 
-        else if (animalDescription && animalDescription.value === "") {
-            errorMessage.style.display = "block"; 
-        }
         else {
             errorMessage.style.display = "none"; 
-        }    
+        }
+    
+    let response = await fetch("http://localhost:3000/animalData",{
+        method : "POST",
+        headers : {
+            "Content-Type" : "application/json"
+        },
+        body: JSON.stringify({
+            name: animalName,
+            imageUrl: imageUrl,
+            description: animalDescription,
+            donations: donateAmount,
+        })
     })
+
+    if(response.ok){
+        console.log(donateAmount,animalDescription,animalName,imageUrl);
+        renderData()
+        fetchData()
+    }
+   
 }
 
 
@@ -84,3 +98,4 @@ const submitBtn = document.querySelector(".submit-button");
 submitBtn.addEventListener("click", () => {
     postAnimals()
 })
+
